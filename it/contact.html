@@ -19,9 +19,25 @@
 </script>
 
 <body>
+
 <header>
+  <div class="mobile-header">
+    <a href="index.html" class="logo-link">
+      <img src="../assets/lavi_logo_wo_full.png" alt="Lab logo of Lab for Artificial Visual Intelligence" class="nav-logo">
+    </a>
+    <label for="mobile-menu-toggle" class="menu-toggle" aria-label="Open navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+
+  <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle" hidden>
+  <label for="mobile-menu-toggle" class="menu-overlay" aria-hidden="true"></label>
+
   <div class="nav-container">
-    <a href="../index.html" class="logo-link">
+
+    <a href="index.html" class="logo-link desktop-logo">
       <img src="../assets/lavi_logo_wo_full.png" alt="Lab logo of Lab for Artificial Visual Intelligence" class="nav-logo">
     </a>
 
@@ -43,6 +59,7 @@
     <div class="nav-footer">
       <p>© 2026 LAVI, Università di Bergamo</p>
     </div>
+
   </div>
 </header>
 
