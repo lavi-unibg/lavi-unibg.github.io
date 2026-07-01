@@ -21,6 +21,14 @@ header {
   z-index: 100;
 }
 
+.mobile-header {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
 .nav-container {
   height: 100%;
   display: flex;
@@ -171,7 +179,7 @@ nav a.active:focus {
 }
 
 .sidebar a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /***** Main Content *****/
@@ -202,10 +210,11 @@ li {
 /***** Links *****/
 a {
   color: #2563eb;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /***** Footer *****/
@@ -221,31 +230,137 @@ footer {
 /***** Responsive *****/
 @media (max-width: 768px) {
   header {
-    position: static;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    padding: 0;
+  }
+
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.9rem 1rem;
+    gap: 1rem;
+  }
+
+  .mobile-header .logo-link {
+    margin: 0;
     width: auto;
-    height: auto;
-    padding: 1rem 0;
-    box-shadow: none;
+    text-align: left;
+  }
+
+  .mobile-header .nav-logo {
+    max-width: 140px;
+  }
+
+  .desktop-logo {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 34px;
+    height: 34px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #111827;
+    border-radius: 999px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+
+  .mobile-menu-toggle {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.55);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    z-index: 999;
   }
 
   .nav-container {
-    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: min(280px, 85vw);
+    max-width: 280px;
+    background: #ffffff;
+    padding: 1.5rem 1rem;
+    box-shadow: 2px 0 18px rgba(0, 0, 0, 0.16);
+    transform: translateX(-110%);
+    transition: transform 0.3s ease;
+    z-index: 1001;
+    align-items: flex-start;
+    overflow-y: auto;
+  }
+
+  .mobile-menu-toggle:checked + .menu-overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .mobile-menu-toggle:checked ~ .nav-container {
+    transform: translateX(0);
+  }
+
+  .nav-container {
+    padding-top: 0;
+  }
+
+  .language-toggle {
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 1rem;
   }
 
   nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    width: 100%;
     gap: 0.5rem;
   }
 
   nav a {
-    padding: 0.7rem 0.9rem;
+    width: 100%;
+    padding: 0.85rem 1rem;
+  }
+
+  .nav-footer {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1rem;
+    right: 1rem;
+    margin-top: 0;
+    text-align: left;
   }
 
   .container {
     flex-direction: column;
     margin: 20px auto;
+    padding: 0 20px;
   }
 
   .sidebar {
@@ -385,8 +500,9 @@ footer {
   }
 
   .card img {
-    width: 100%;
+    width: min(280px, 100%);
     height: auto;
+    margin: 0 auto 1rem;
   }
 }
 
@@ -394,6 +510,7 @@ footer {
   position: fixed;
   bottom: 25px;
   right: 25px;
+  z-index: 1000;
   background-color: #2563eb;
   color: white;
   border: none;
@@ -456,7 +573,7 @@ h2 {
 }
 
 .contact-simple a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .section-card {
@@ -779,7 +896,7 @@ h2 {
 }
 
 .publication-list a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .publication-title {

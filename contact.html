@@ -3,13 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
+  <title>Contact | Lab for Artificial Visual Intelligence</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
-<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="toTopBtn">
-  ↑ Top
-</button>
 
 <script>
   function copyEmail(event) {
@@ -24,17 +20,36 @@
 
 <body>
 
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="toTopBtn">
+  ↑ Top
+</button>
+
+
 <header>
+  <div class="mobile-header">
+    <a href="index.html" class="logo-link">
+      <img src="assets/lavi_logo_wo_full.png" alt="Lab logo of Lab for Artificial Visual Intelligence" class="nav-logo">
+    </a>
+    <label for="mobile-menu-toggle" class="menu-toggle" aria-label="Open navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+
+  <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle" hidden>
+  <label for="mobile-menu-toggle" class="menu-overlay" aria-hidden="true"></label>
+
   <div class="nav-container">
 
-    <a href="index.html" class="logo-link">
+    <a href="index.html" class="logo-link desktop-logo">
       <img src="assets/lavi_logo_wo_full.png" alt="Lab logo of Lab for Artificial Visual Intelligence" class="nav-logo">
     </a>
 
     <div class="language-toggle">
       <a href="#" class="lang-option active">ENG</a>
       <span class="lang-separator">|</span>
-      <a href="#" class="lang-option">ITA</a>
+      <a href="it/contact.html" class="lang-option">ITA</a>
     </div>
 
     <nav>
@@ -49,9 +64,6 @@
     <div class="nav-footer">
       <p>© 2026 LAVI, University of Bergamo</p>
     </div>
-  </div>
-</header>
-    </nav>
 
   </div>
 </header>
@@ -67,7 +79,7 @@
 
     <p class="intro">
       I welcome inquiries from <strong>motivated students</strong> and <strong>researchers</strong> from academia and industry interested in research and collaboration.
-      Please read the guidelines below before reaching out to ensure a good fit. Please see the "Join us" page for current open positions and opportunities.
+      Please read the guidelines below before reaching out to ensure a good fit. Please see the "Join" page for current open positions and opportunities.
     </p>
 
     <!-- ===== Internal Students ===== -->
@@ -135,7 +147,7 @@
       </ul>
     </p>
     
-    <p>Please see the <a href="open-positions.html">Join us</a> page for current openings.</p>
+    <p>Please see the <a href="open-positions.html">Join</a> page for current openings.</p>
 
     <!-- ===== Industry ===== -->
     <h2>External Organizations & Industry Collaboration</h2>
@@ -147,7 +159,7 @@
 
     <p>
       Potential collaboration topics include (but are not limited to) <strong>generative modelling</strong>, <strong>multimodal learning</strong>, and
-      <strong>trustworthy AI</strong>. Please see my publications for concrete topics.
+      <strong>trustworthy AI</strong>. Please the pages Research and Publications for concrete topics.
     </p>
 
     <p>
@@ -172,7 +184,7 @@
 
     <!-- ===== Closing ===== -->
     <p class="closing">
-      I look forward to hearing from students, researchers, and organizations whose interests align closely with my research.
+      We look forward to hearing from students, researchers, and organizations whose interests align closely with our research.
     </p>
 
   </div>

@@ -10,16 +10,30 @@
 <body>
 
 <header>
+  <div class="mobile-header">
+    <a href="index.html" class="logo-link">
+      <img src="assets/lavi_logo_wo_full.png" alt="Lab logo of Lab for Artificial Visual Intelligence" class="nav-logo">
+    </a>
+    <label for="mobile-menu-toggle" class="menu-toggle" aria-label="Open navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+
+  <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle" hidden>
+  <label for="mobile-menu-toggle" class="menu-overlay" aria-hidden="true"></label>
+
   <div class="nav-container">
 
-    <a href="index.html" class="logo-link">
+    <a href="index.html" class="logo-link desktop-logo">
       <img src="assets/lavi_logo_wo_full.png" alt="Lab logo of Lab for Artificial Visual Intelligence" class="nav-logo">
     </a>
 
     <div class="language-toggle">
       <a href="#" class="lang-option active">ENG</a>
       <span class="lang-separator">|</span>
-      <a href="#" class="lang-option">ITA</a>
+      <a href="it/index.html" class="lang-option">ITA</a>
     </div>
 
     <nav>
@@ -45,10 +59,10 @@
       <h1>LAVI: <span style="color: blue">L</span>ab for <span style="color: blue">A</span>rtificial <span style="color: blue">V</span>isual <span style="color: blue">I</span>ntelligence</h1>
       <p class="tagline">Advancing visual intelligence through multimodal learning, efficient models, and trustworthy systems.</p>
       <p class="hero-desc">
-        Welcome to the official webpage of <strong>Lab for Artificial Visual Intelligence</strong> (<strong>LAVI</strong>), pronounced <em>la vie</em> in French. At LAVI, we develop <strong>Artificial Intelligence (AI)</strong> methods, with a strong focus on <strong>computer vision</strong> and <strong>Generative AI</strong>, to address complex real-world perception problems. Our research integrates vision, language, and structured data to build robust and data-efficient models for machine perception that are capable of operating in challenging environments.
+        Welcome to the official webpage of <strong>Lab for Artificial Visual Intelligence</strong> (<strong>LAVI</strong>), pronounced <em>la vie</em> in French. At LAVI, we develop <strong>Artificial Intelligence (AI)</strong> methods, with a strong focus on <strong>computer vision</strong> and <strong>Generative AI</strong>, to address complex perception problems. Our research integrates vision, language, and structured data to build robust and data-efficient models for machine perception that are capable of operating in challenging environments.
       </p>
-      <p>We are particularly interested in <strong>low-resource and trustworthy learning approaches</strong>, with applications in robotics, remote sensing, and medical imaging, where both accuracy and adaptability are critical.</p>
-      <p class="hero-desc"><strong>LAVI</strong> is led by Dr. <a href="https://roysubhankar.github.io/index.html" target="_blank">Subhankar Roy</a>, who is aTenure-Track Assistant Professor in the Department of Management, Information and Production Engineering (DIGIP) at the <strong>University of Bergamo, Italy</strong></p>
+      <p class="hero-desc">We are particularly interested in <strong>low-resource and trustworthy learning approaches</strong>, with applications in robotics, remote sensing, and medical imaging, where both accuracy and adaptability are critical.</p>
+      <p class="hero-desc"><strong>LAVI</strong> is led by Dr. <a href="https://roysubhankar.github.io/index.html" target="_blank">Subhankar Roy</a>, who is a Tenure-Track Assistant Professor in the Department of Management, Information and Production Engineering (DIGIP) at the <strong>University of Bergamo, Italy</strong>.</p>
     </div>
 
     <div class="visiting-banner">
@@ -105,7 +119,7 @@
         <div class="grid-cards">
 
             <div class="mini-card">
-              <div class="mini-card-icon">G</div>
+              <div class="mini-card-icon">C</div>
               <div class="mini-card-content">
                 <h3>General Computer Vision</h3>
                 <p>Classical computer vision tasks: image recognition, object detection, semantic segmentation, and image generation.</p>

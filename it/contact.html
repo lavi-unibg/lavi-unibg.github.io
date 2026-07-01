@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti | Lab for Artificial Visual Intelligence</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<script>
+  function copyEmail(event) {
+    event.preventDefault();
+    const email = "subhankar.roy@unibg.it";
+
+    navigator.clipboard.writeText(email).then(() => {
+      alert("Email (subhankar.roy@unibg.it) Copiato negli appunti!");
+    });
+  }
+</script>
+
+<body>
+<header>
+  <div class="nav-container">
+    <a href="../index.html" class="logo-link">
+      <img src="../assets/lavi_logo_wo_full.png" alt="Lab logo of Lab for Artificial Visual Intelligence" class="nav-logo">
+    </a>
+
+    <div class="language-toggle">
+      <a href="../contact.html" class="lang-option">ENG</a>
+      <span class="lang-separator">|</span>
+      <a href="#" class="lang-option active">ITA</a>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Ricerca</a>
+      <a href="people.html">Persone</a>
+      <a href="publications.html">Pubblicazioni</a>
+      <a href="join.html">Join</a>
+      <a href="contact.html" class="active">Contatti</a>
+    </nav>
+
+    <div class="nav-footer">
+      <p>© 2026 LAVI, Università di Bergamo</p>
+    </div>
+  </div>
+</header>
+
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="toTopBtn">
+  ↑ Top
+</button>
+
+<div class="container">
+  <div class="main">
+
+    <h1>Contatti e Opportunità</h1>
+
+    <p class="contact-simple">
+  📩 <a href="#" onclick="copyEmail(event)">Email di contatto (clicca per copiare l'email)</a>
+    </p>
+
+    <p class="intro">
+      Sono lieto di ricevere richieste da parte di <strong>studenti e ricercatori motivati</strong>, provenienti sia dal mondo accademico che dall'industria, interessati alla ricerca e alla collaborazione.
+
+      Vi invito a leggere le linee guida riportate di seguito prima di contattarmi, per verificare la compatibilità del vostro profilo. Per le posizioni aperte e le opportunità attuali, consultate la pagina "Join".
+    </p>
+
+    <!-- ===== Internal Students ===== -->
+    <h2>Studenti dei corsi di LT e LM dell'UniBG</h2>
+
+    <p><img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm90NzhidTFrNjQ2eXd0bm81ZTAyMGNsYmR3bzhkd3YxM2xjN2x2OCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ZuMBFs7D3HOl70inpD/giphy.gif" alt="NEW" style="display:inline-block;height:20px;vertical-align:middle;"> <strong>Sono attualmente disponibili diversi argomenti per tesi di laurea triennale e magistrale. Contattarmi per ulteriori informazioni.</strong></p>
+
+    <p>
+      Se sei uno studente di laurea triennale o magistrale attualmente iscritto all'UniBG e sei interessato a una tesi sotto la mia supervisione, puoi contattarmi a condizione che tu:
+      <ul>
+        <li>Aver frequentato o stare attualmente frequentando uno dei miei corsi (i.e., "<strong>Introduction to Machine Learning</strong>" oppure "<strong>Deep Learning</strong>"), oppure qualsiasi corso relativo a <strong>Intelligenza Artificiale</strong> in generale</li>
+        <li>Possedere una solida preparazione in uno dei seguenti linguaggi di programmazione: Python, C, C++, MATLAB, Java</li>
+      </ul>
+    </p>
+
+    <strong>Nella tua email, includi:</strong> una breve descrizione del motivo del tuo interesse e degli argomenti di tesi preferiti (se presenti)
+
+    <!-- ===== External Students ===== -->
+    <h2>Visiting Students (Bsc / Msc / PhD)</h2>
+
+    <p>
+      Sono disponibile a <strong>collaborazioni</strong>, <strong>progetti di ricerca congiunti</strong> e richieste di <strong>co-relazione di tesi</strong> da parte di potenziali studenti in visita, iscritti a un livello di studi corrispondente presso qualsiasi istituto di istruzione superiore che rilasci titoli accademici.
+      Dovresti avere:
+    </p>
+
+    <ul>
+      <li>Una solida formazione in machine learning e/o deep learning</li>
+      <li>Buone competenze di programmazione in Python</li>
+    </ul>
+
+    <p><strong>Quando ci contatta, la preghiamo di includere:</strong></p>
+    <ul>
+      <li>Tuo CV</li>
+      <li>Il tuo tracciato di studio (se disponibile)</li>
+      <li>Un riassunto delle tue ricerche o progetti precedenti (con link se disponibili)</li>
+      <li>Una breve spiegazione di come i tuoi interessi si allineano con la mia ricerca</li>
+    </ul>
+
+    <!-- ===== PhD Students ===== -->
+    <h2>Aspiranti dottorandi</h2>
+
+    <p>
+      Gli aspiranti dottorandi possono contattarmi per manifestare il proprio interesse a collaborare con me. È richiesta una solida preparazione in machine learning/deep learning e programmazione. Pregresse esperienze di pubblicazione costituiscono un titolo preferenziale.
+    </p>
+
+    <p><strong>Quando ci contatta, la preghiamo di includere:</strong></p>
+    <ul>
+      <li>Tuo CV</li>
+      <li>Il tuo tracciato di studio (se disponibile)</li>
+      <li>Un riassunto delle tue ricerche o progetti precedenti (con link se disponibili)</li>
+      <li>Una breve spiegazione di come i tuoi interessi si allineano con la mia ricerca</li>
+    </ul>
+
+    <p>
+      Per le procedure di candidatura formali e i tempi, fare riferimento alle pagine web rilevanti di UniBG:
+      <ul>
+        <li>
+            Informazioni generali: <a href="https://www.unibg.it/ricerca/fare-ricerca/dottorati-ricerca" target="_blank">PhD Programs (🇬🇧)</a> | <a href="https://www.unibg.it/ricerca/fare-ricerca/dottorati-ricerca" target="_blank">Dottorati di ricerca (🇮🇹)</a>
+        </li>
+        <li>Dottorato di ricerca in <a href="https://phd-ai4sf.unibg.it/" target="_blank"><strong>Artificial Intelligence for Sustainable Futures</strong></a></li>
+        <li>Dottorato di ricerca in <a href="https://phd-tim.unibg.it/en" target="_blank"><strong>Technology, Innovation and Management</strong></a></li>
+        <li>Dottorato di ricerca in <a href="https://phd-meet.unibg.it/en" target="_blank"><strong>Manufacturing Ecosystems Enabled by Intelligent Technologies</strong></a></li>
+      </ul>
+    </p>
+    
+    <p>Si prega di consultare la pagina <a href="open-positions.html">Join</a> per le posizioni aperte.</p>
+
+    <!-- ===== Industry ===== -->
+    <h2>Organizzazioni esterne e collaborazione con l'industria</h2>
+
+    <p>
+      Sono aperto a richieste da parte di <strong>università</strong>, <strong>enti di ricerca</strong>, <strong>aziende</strong> e <strong>SME</strong> interessati a collaborazioni di ricerca, progetti congiunti, proposte di finanziamento o allo sviluppo di proof-of-concept in ambiti attinenti alla mia attività.
+    </p>
+
+    <p>
+      Tra i possibili ambiti di collaborazione figurano (a titolo esemplificativo) la <strong>IA generativa</strong>, <strong>l'apprendimento multimodale</strong> e <strong>l'IA affidabile</strong>. Per temi specifici, si rimanda alla pagina Ricerca e Pubblicazioni.
+    </p>
+
+    <p>
+      Se siete interessati a collaborare, vi prego di contattarmi fornendo:
+      <ul>
+        <li>
+            Una breve descrizione della vostra organizzazione
+        </li>
+        <li>Il problema o il caso d'uso che avete in mente, e lo scope della collaborazione proposta</li>
+      </ul>
+    </p>
+
+
+    <!-- ===== Notes ===== -->
+    <h2>Note importanti</h2>
+
+    <ul>
+      <li>Attualmente non posso offrire stage a pagamento.</li>
+      <li>Qualsiasi posizione finanziata o opportunità verranno pubblicate su questa pagina web.</li>
+      <li>Non posso rispondere a richieste che non corrispondono ai criteri sopra indicati.</li>
+    </ul>
+
+    <!-- ===== Closing ===== -->
+    <p class="closing">
+      Attendiamo con interesse di ricevere notizie da studenti, ricercatori e organizzazioni i cui interessi siano strettamente affini alla nostra ricerca.
+    </p>
+
+  </div>
+</div>
+
+</body>
+</html>

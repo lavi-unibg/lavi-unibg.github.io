@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team</title>
+  <title>Team | Lab for Artificial Visual Intelligence</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,17 +13,32 @@
 
 <body>
 
+
 <header>
+  <div class="mobile-header">
+    <a href="index.html" class="logo-link">
+      <img src="assets/lavi_logo_wo_full.png" alt="Lab logo of Lab for Artificial Visual Intelligence" class="nav-logo">
+    </a>
+    <label for="mobile-menu-toggle" class="menu-toggle" aria-label="Open navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+
+  <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle" hidden>
+  <label for="mobile-menu-toggle" class="menu-overlay" aria-hidden="true"></label>
+
   <div class="nav-container">
 
-    <a href="index.html" class="logo-link">
+    <a href="index.html" class="logo-link desktop-logo">
       <img src="assets/lavi_logo_wo_full.png" alt="Lab logo of Lab for Artificial Visual Intelligence" class="nav-logo">
     </a>
 
     <div class="language-toggle">
       <a href="#" class="lang-option active">ENG</a>
       <span class="lang-separator">|</span>
-      <a href="#" class="lang-option">ITA</a>
+      <a href="it/people.html" class="lang-option">ITA</a>
     </div>
 
     <nav>
