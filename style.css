@@ -861,6 +861,51 @@ h2 {
   transition: transform 0.2s ease;
 }
 
+.mini-card-image {
+  flex-direction: column;
+  padding: 0;
+  border-color: transparent;
+  overflow: hidden;
+}
+
+.mini-card-image-inner {
+  position: relative;
+  width: 100%;
+  min-height: 180px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-size 0.3s ease, transform 0.3s ease;
+}
+
+.mini-card-image:hover .mini-card-image-inner {
+  background-size: 110%;
+  transform: scale(1.02);
+}
+
+.mini-card-image-inner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.2) 0%, rgba(15, 23, 42, 0.72) 100%);
+}
+
+.mini-card-image-inner h3 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.mini-card-image .mini-card-content {
+  padding: 16px;
+  background: #fafafa;
+}
+
 .mini-card-icon {
   width: 50px;
   height: 50px;
