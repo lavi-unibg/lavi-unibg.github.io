@@ -15,6 +15,7 @@ body {
   background-color: #fafafa;
   color: #222;
   line-height: 1.7;
+  padding-left: 240px;
 }
 
 /***** Navigation *****/
@@ -146,7 +147,7 @@ nav a.active:focus {
 .container {
   display: flex;
   max-width: 1000px;
-  margin: 40px auto 40px 300px;
+  margin: 40px auto;
   gap: 60px;
   padding: 0 20px;
 }
@@ -249,6 +250,10 @@ footer {
     box-shadow: 0 1px 15px rgba(0, 0, 0, 0.08);
     z-index: 1000;
     padding: 0;
+  }
+
+  body {
+    padding-left: 0;
   }
 
   .mobile-header {
