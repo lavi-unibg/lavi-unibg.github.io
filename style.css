@@ -224,6 +224,14 @@ nav a.active:focus {
   margin: 0.8rem 0 1.5rem;
 }
 
+.last-updated {
+  margin: 1rem 0 0;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: #6b7280;
+  text-align: right;
+}
+
 /***** Lists *****/
 ul {
   padding-left: 20px;
