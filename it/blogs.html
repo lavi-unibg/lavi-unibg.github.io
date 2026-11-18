@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Lab for Artificial Visual Intelligence</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="toTopBtn">
+  ↑ Top
+</button>
+
+<header>
+  <div class="mobile-header">
+    <a href="index.html" class="logo-link">
+      <img src="../assets/lavi_logo_wo_full.png" alt="Lab logo of Lab for Artificial Visual Intelligence" class="nav-logo">
+    </a>
+    <label for="mobile-menu-toggle" class="menu-toggle" aria-label="Open navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+
+  <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle" hidden>
+  <label for="mobile-menu-toggle" class="menu-overlay" aria-hidden="true"></label>
+
+  <div class="nav-container">
+
+    <a href="index.html" class="logo-link desktop-logo">
+      <img src="../assets/lavi_logo_wo_full.png" alt="Lab logo of Lab for Artificial Visual Intelligence" class="nav-logo">
+    </a>
+
+    <div class="language-toggle">
+      <a href="../blogs.html" class="lang-option">ENG</a>
+      <span class="lang-separator">|</span>
+      <a href="#" class="lang-option active">ITA</a>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Ricerca</a>
+      <a href="people.html">Persone</a>
+      <a href="publications.html">Pubblicazioni</a>
+      <a href="join.html">Join</a>
+      <a href="contact.html">Contatti</a>
+      <a href="blogs.html" class="active">Blog</a>
+    </nav>
+
+    <div class="nav-footer">
+      <p>© 2026 LAVI, Università di Bergamo</p>
+    </div>
+
+  </div>
+</header>
+
+<div class="container">
+  <div class="main">
+
+    <h1>Blog</h1>
+    <p class="intro">
+      Qui condividiamo i risultati delle nostre ricerche e le nostre riflessioni in modo più informale e accessibile.
+    </p>
+
+    <div class="blog-list">
+
+      <article class="blog-item">
+        <div class="blog-heading-row">
+          <h2><a href="../blog/proactivebench/index.html">Can AI models ask for help?</a></h2>
+          <span class="blog-badge">Pubblicato</span>
+        </div>
+        <p class="blog-meta">Autore: Subhankar Roy · Data: Nov 18, 2026 · Lingua: Inglese</p>
+        <div class="blog-tldr">
+          <strong>TLDR:</strong> I modelli linguistici di grandi dimensioni multimodali possono chiedere aiuto quando vengono loro poste domande a cui non sanno rispondere?
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
